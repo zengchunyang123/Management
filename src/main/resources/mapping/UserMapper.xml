@@ -34,7 +34,6 @@
             <if test="passWord != null" >
                 passWord,
             </if>
-
             <if test="realName != null" >
                 realName,
             </if>

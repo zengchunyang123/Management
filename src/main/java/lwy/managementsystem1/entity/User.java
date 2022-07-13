@@ -1,14 +1,12 @@
 package lwy.managementsystem1.entity;
-
 public class User {
     private Integer id;
     private String userName;
     private String passWord;
     private String realName;
-
     public Integer getId() {
         return id;
-}
+    }
     public void setId(Integer id) {
         this.id = id;
     }
@@ -47,3 +45,4 @@ public class User {
                 '}';
     }
 }
+
