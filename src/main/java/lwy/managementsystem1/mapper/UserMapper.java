@@ -27,6 +27,14 @@ public interface UserMapper {
 
     /**
      * 根据id删除
+     * @return
+     */
+    default int deleteById() {
+        return deleteById();
+    }
+
+    /**
+     * 根据id删除
      * @param id
      * @return
      */
@@ -37,4 +45,21 @@ public interface UserMapper {
      * @return
      */
     List<User> selectAll ();
+
+
+    int selectD(String department);
+
+    int selectD();
+
+    /**
+     * 根据部门打印
+     * @return
+     */
+    List<User> printByDepartment(String department);
+
+    /*
+    *根据性别打印
+     * @return
+     */
+    List<User> printBySex(int sex);
 }

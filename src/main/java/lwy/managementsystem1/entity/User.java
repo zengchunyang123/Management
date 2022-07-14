@@ -1,48 +1,70 @@
 package lwy.managementsystem1.entity;
+
 public class User {
     private Integer id;
-    private String userName;
-    private String passWord;
-    private String realName;
+    private String name;
+    private String age;
+    private Integer sex;
+    private String department;
+    private String salary;
+
     public Integer getId() {
         return id;
     }
+
     public void setId(Integer id) {
         this.id = id;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getName() {
+        return name;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getPassWord() {
-        return passWord;
+    public String getAge() {
+        return age;
     }
 
-    public void setPassWord(String passWord) {
-        this.passWord = passWord;
+    public void setAge(String age) {
+        this.age = age;
     }
 
-    public String getRealName() {
-        return realName;
+    public Integer getSex() {
+        return sex;
     }
 
-    public void setRealName(String realName) {
-        this.realName = realName;
+    public void setSex(Integer sex) {
+        this.sex = sex;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
+    public String getSalary() {
+        return salary;
+    }
+
+    public void setSalary(String salary) {
+        this.salary = salary;
     }
 
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", userName='" + userName + '\'' +
-                ", passWord='" + passWord + '\'' +
-                ", realName='" + realName + '\'' +
+                ", name='" + name + '\'' +
+                ", age='" + age + '\'' +
+                ", sex=" + sex +
+                ", department='" + department + '\'' +
+                ", salary='" + salary + '\'' +
                 '}';
     }
 }
-

@@ -1,36 +1,26 @@
 package lwy.managementsystem1.service;
 
 import lwy.managementsystem1.entity.User;
-import lwy.managementsystem1.mapper.UserMapper;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+
 
 import java.util.List;
 
-@Service
-public class UserService {
-    @Autowired
-    private UserMapper userMapper;
-
-    public User getUserInfo(int id) {
-        return userMapper.getUserInfo(id);
-    }
+public interface UserService {
 
 
-    public int deleteById(int id) {
-        return userMapper.deleteById(id);
-    }
+    public User getUserInfo(int id);
 
-    public int Update(User user) {
-        return userMapper.update(user);
-    }
 
-    public User save(User user) {
-        int save = userMapper.save(user);
-        return user;
-    }
+    public int deleteById(int id);
 
-    public List<User> selectAll() {
-        return userMapper.selectAll();
-    }
+    public int Update(User user) ;
+
+    public User save( User user);
+
+    public List<User> selectAll();
+
+    public int selectD(String department);
+
+    public List<User> printByDepartment(String department);
+    public List<User> printBySex(int sex);
 }
